@@ -1,3 +1,8 @@
+Array1=[1,2,3,4,5];
+console.log(Array1);
+Array2=[[1,2,3],[4,5,6],[7,8,9]];
+console.log(Array2);
+console.log(Array2[1][1]);
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -36,9 +41,9 @@ function setup(){
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
 
-    bird = new Bird(100,100);
+    bird = new Bird(200,50);
 
-    slingshot = new Slingshot(bird.body,{x:200,y:100});
+    slingshot = new Slingshot(bird.body,{x:200,y:50});
 }
 
 function draw(){
